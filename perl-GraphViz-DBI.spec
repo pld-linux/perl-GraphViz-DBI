@@ -10,7 +10,8 @@ Summary(pl):	Modu³ Perla GraphViz::DBI - tworzenie graf tabel i relacji dla bazy
 Name:		perl-GraphViz-DBI
 Version:	0.02
 Release:	2
-License:	Artistic or GPL
+# same as perl
+License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9921cf28e6db58c0b4b9728bdf2866d7
