@@ -1,18 +1,19 @@
 #
 # Conditional build:
 # _without_tests - do not perform "make test"
+#
 %include	/usr/lib/rpm/macros.perl
 %define		pdir	GraphViz
 %define		pnam	DBI
 Summary:	GraphViz::DBI Perl module - graph database tables and relations
 Summary(pl):	Modu³ Perla GraphViz::DBI - tworzy graf tabel i relacji dla bazy danych
 Name:		perl-GraphViz-DBI
-Version:	0.01
+Version:	0.02
 Release:	2
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
-# Source0-md5:	ba8485c65e048e92502fe8ed8255955a
+# Source0-md5:	9921cf28e6db58c0b4b9728bdf2866d7
 BuildRequires:	perl-devel >= 5.6
 BuildRequires:	perl-GraphViz
 BuildRequires:	rpm-perlprov >= 4.1-13
