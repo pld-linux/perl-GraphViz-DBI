@@ -3,8 +3,8 @@
 %bcond_without	tests	# do not perform "make test"
 #
 %include	/usr/lib/rpm/macros.perl
-%define		pdir	GraphViz
-%define		pnam	DBI
+%define	pdir	GraphViz
+%define	pnam	DBI
 Summary:	GraphViz::DBI Perl module - graph database tables and relations
 Summary(pl):	Modu³ Perla GraphViz::DBI - tworzenie graf tabel i relacji dla bazy danych
 Name:		perl-GraphViz-DBI
