@@ -7,7 +7,7 @@
 Summary:	GraphViz::DBI Perl module - graph database tables and relations
 Summary(pl):	Modu³ Perla GraphViz::DBI - tworzy graf tabel i relacji dla bazy danych
 Name:		perl-GraphViz-DBI
-Version:	0.01
+Version:	0.02
 Release:	1
 License:	Artistic or GPL
 Group:		Development/Languages/Perl
