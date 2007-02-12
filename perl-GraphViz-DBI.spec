@@ -6,7 +6,7 @@
 %define		pdir	GraphViz
 %define		pnam	DBI
 Summary:	GraphViz::DBI Perl module - graph database tables and relations
-Summary(pl):	Modu³ Perla GraphViz::DBI - tworzenie graf tabel i relacji dla bazy danych
+Summary(pl.UTF-8):   ModuÅ‚ Perla GraphViz::DBI - tworzenie graf tabel i relacji dla bazy danych
 Name:		perl-GraphViz-DBI
 Version:	0.02
 Release:	2
@@ -28,11 +28,11 @@ object, pass an open database handle, then call `graph_tables' to
 determine database metadata and construct a GraphViz graph from the
 table and field information.
 
-%description -l pl
-Ten modu³ konstruuje graf dla bazy danych pokazuj±c tabele i ³±cz±c
-je je¶li s± miêdzy nimi relacje. Wystarczy w czasie lub po tworzeniu
-obiektu przekazaæ uchwyt otwartej bazy i wywo³aæ graph_tables, aby
-okre¶liæ metadane bazy i skonstruowaæ GraphVizowy graf z informacji o
+%description -l pl.UTF-8
+Ten moduÅ‚ konstruuje graf dla bazy danych pokazujÄ…c tabele i Å‚Ä…czÄ…c
+je jeÅ›li sÄ… miÄ™dzy nimi relacje. Wystarczy w czasie lub po tworzeniu
+obiektu przekazaÄ‡ uchwyt otwartej bazy i wywoÅ‚aÄ‡ graph_tables, aby
+okreÅ›liÄ‡ metadane bazy i skonstruowaÄ‡ GraphVizowy graf z informacji o
 tabelach i polach.
 
 %prep
