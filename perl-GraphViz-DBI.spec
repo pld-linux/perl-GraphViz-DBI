@@ -1,10 +1,10 @@
 #
 # Conditional build:
 %bcond_without	tests	# do not perform "make test"
-#
-%include	/usr/lib/rpm/macros.perl
+
 %define		pdir	GraphViz
 %define		pnam	DBI
+%include	/usr/lib/rpm/macros.perl
 Summary:	GraphViz::DBI Perl module - graph database tables and relations
 Summary(pl.UTF-8):	Moduł Perla GraphViz::DBI - tworzenie graf tabel i relacji dla bazy danych
 Name:		perl-GraphViz-DBI
@@ -15,8 +15,9 @@ License:	GPL v1+ or Artistic
 Group:		Development/Languages/Perl
 Source0:	http://www.cpan.org/modules/by-module/%{pdir}/%{pdir}-%{pnam}-%{version}.tar.gz
 # Source0-md5:	9921cf28e6db58c0b4b9728bdf2866d7
-BuildRequires:	perl-devel >= 1:5.8.0
+URL:		http://search.cpan.org/dist/GraphViz-DBI/
 BuildRequires:	perl-GraphViz
+BuildRequires:	perl-devel >= 1:5.8.0
 BuildRequires:	rpm-perlprov >= 4.1-13
 BuildArch:	noarch
 BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
@@ -29,8 +30,8 @@ determine database metadata and construct a GraphViz graph from the
 table and field information.
 
 %description -l pl.UTF-8
-Ten moduł konstruuje graf dla bazy danych pokazując tabele i łącząc
-je jeśli są między nimi relacje. Wystarczy w czasie lub po tworzeniu
+Ten moduł konstruuje graf dla bazy danych pokazując tabele i łącząc je
+jeśli są między nimi relacje. Wystarczy w czasie lub po tworzeniu
 obiektu przekazać uchwyt otwartej bazy i wywołać graph_tables, aby
 określić metadane bazy i skonstruować GraphVizowy graf z informacji o
 tabelach i polach.
@@ -52,7 +53,7 @@ install -d $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 %{__make} install \
 	DESTDIR=$RPM_BUILD_ROOT
 
-install examples/*.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
+cp -p examples/*.pl $RPM_BUILD_ROOT%{_examplesdir}/%{name}-%{version}
 
 %clean
 rm -rf $RPM_BUILD_ROOT
