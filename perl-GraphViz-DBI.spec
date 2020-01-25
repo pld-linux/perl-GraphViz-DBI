@@ -4,7 +4,6 @@
 
 %define		pdir	GraphViz
 %define		pnam	DBI
-%include	/usr/lib/rpm/macros.perl
 Summary:	GraphViz::DBI Perl module - graph database tables and relations
 Summary(pl.UTF-8):	Moduł Perla GraphViz::DBI - tworzenie graf tabel i relacji dla bazy danych
 Name:		perl-GraphViz-DBI
